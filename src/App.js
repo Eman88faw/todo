@@ -37,7 +37,7 @@ function App() {
           {todos.map(({text,completed},index)=> {
             return (
              <div className="item">
-               <li className={completed ? "done": ""} key={index} onClick={()=>handleItemDone(index)}>{text}</li>;
+               <li className={completed ? "done": ""} key={index} onClick={()=>handleItemDone(index)}>{text}</li>
                <span onClick={()=>handlDeletItem(index)}> ❌ </span>
              </div>);
 
